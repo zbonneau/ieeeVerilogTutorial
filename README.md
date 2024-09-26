@@ -26,3 +26,7 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wavetra
 
 Note: Wavetrace basic limits view to 8 signals. Unlimited signal count available with one-time $15 purchase. Good for 2-transferable license keys. Not affiliated with WaveTrace, I just think it is worth it
 
+## Icarus Verilog
+If you decide to be efficient with your coding experience and use VS Code, install icarus verilog and add to PATH
+Link: https://bleyer.org/icarus/
+
