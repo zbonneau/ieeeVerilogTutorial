@@ -30,3 +30,17 @@ Note: Wavetrace basic limits view to 8 signals. Unlimited signal count available
 If you decide to be efficient with your coding experience and use VS Code, install icarus verilog and add to PATH
 Link: https://bleyer.org/icarus/
 
+## A Note on the Display module
+The default xdc file has "seg[n]" for the 7 cathodes on the display. This order is:
+    seg[0]: a
+    ...
+    seg[6]: g
+The display module has these bits flipped in the submodule "segmentDriver"
+    seg[0]: g
+    ...
+    seg[6]: a
+Here are two solutions to this reversed order:
+    1. Flip all of the bits in the module "segmentDriver"
+    2. Flip the bits in the xdc file
+        {seg[0]} -> {seg[6]} ...
+    3. There are other ways of solving this problem. I'll let you find them
